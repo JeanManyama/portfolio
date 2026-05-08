@@ -2,7 +2,7 @@ export default function App() {
   return (
     <div className="container">
 
-      {/* HERO */}
+      {/* HEROOOO */}
       <header className="hero">
         <h1>Jean Manyama Kapinga</h1>
         <h2>Développeur Fullstack (React / Node.js)</h2>
