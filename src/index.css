@@ -146,3 +146,18 @@ code {
   text-align: center;
   margin-bottom: 50px;
 }
+
+.card img {
+  width: 100%;
+  max-width: 650px;
+  height: auto;
+  border-radius: 12px;
+  margin-top: 15px;
+  display: block;
+  margin-inline: auto;
+}
+
+.dashboard-img:hover {
+  transform: scale(1.02);
+  transition: 0.3s ease;
+}
