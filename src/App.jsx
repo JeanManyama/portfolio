@@ -41,13 +41,7 @@ export default function App() {
         <img src="/production-dashboard.png" alt="production-dashboard" className="dashboard-img"/>
       </section>
 
-      {/* COMPÉTENCES */}
-      <section className="card">
-        <h3>🛠️ Compétences</h3>
-        <p>React • Node.js • Express • PostgreSQL • Git • CI/CD • API REST • Sécurité</p>
-      </section>
-
-            {/* FONCTIONNALITES*/}
+                  {/* FONCTIONNALITES*/}
             <section className="card">
             <h3>⚙️ Fonctionnalités</h3>
             <ul>
@@ -58,6 +52,12 @@ export default function App() {
   <li>Rate limiting et sécurité API</li>
   <li>Tests unitaires avec Jest</li>
 </ul>
+      </section>
+
+      {/* COMPÉTENCES */}
+      <section className="card">
+        <h3>🛠️ Compétences</h3>
+        <p>React • Node.js • Express • PostgreSQL • Git • CI/CD • API REST • Sécurité</p>
       </section>
 
       {/* CONTACT */}
