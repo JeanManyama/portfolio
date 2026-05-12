@@ -57,7 +57,7 @@ export default function App() {
       {/* COMPÉTENCES */}
       <section className="card">
         <h3>🛠️ Compétences</h3>
-        <p>React • Node.js • Express • PostgreSQL • Git • CI/CD • API REST • Sécurité</p>
+        <p>React • Vue.js • Node.js • Express • PostgreSQL • Docker • Github Actions • CI/CD • API REST • Sécurité</p>
       </section>
 
       {/* CONTACT */}
