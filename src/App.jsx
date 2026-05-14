@@ -12,7 +12,7 @@ export default function App() {
 
         <div className="buttons">
           <a href="https://github.com/JeanManyama" target="_blank">GitHub</a>
-          <a href="https://deploy-front-vercel-cd.vercel.app" target="_blank">Projet live</a>
+          <a href="https://kalhyge-prod.vercel.app" target="_blank">Projet live</a>
           <a href="https://github.com/JeanManyama/kalhyge-prod-frontend" target="_blank">
   Frontend GitHub
 </a>
