@@ -1,16 +1,62 @@
-# React + Vite
+# Jean Manyama Kapinga — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portfolio personnel de **Jean Manyama Kapinga**, développeur Full Stack JavaScript spécialisé en React, Node.js, TypeScript et PostgreSQL.
 
-Currently, two official plugins are available  :
+## Positionnement
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Le portfolio adopte une direction **industrial tech / editorial** inspirée de mon parcours : expérience opérationnelle en environnement industriel, développement web Full Stack et conception de Kalhyge-Prod comme projet de certification CDA.
 
-## React Compiler
+## Projet principal
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Kalhyge-Prod
 
-## Expanding the ESLint configuration
+Application de suivi de production industrielle en temps réel.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- Node.js / Express
+- PostgreSQL
+- Socket.IO
+- JWT / rate limiting / validation
+- Jest
+- GitHub Actions / CI/CD
+- Vercel / Render
+
+Frontend : https://github.com/JeanManyama/kalhyge-prod-frontend  
+Backend : https://github.com/JeanManyama/kalhyge-prod-backend  
+Live : https://kalhyge-prod.vercel.app
+
+## Portfolio
+
+Le site présente :
+
+- une introduction claire du profil Full Stack ;
+- une étude de cas Kalhyge-Prod ;
+- les expériences Makaramedia, SSD Group et Kalhyge ;
+- une approche engineering : Build / Secure / Test / Ship ;
+- un mode bilingue Français / Anglais ;
+- GitHub, LinkedIn et contact direct.
+
+## Stack
+
+- React 19
+- Vite
+- CSS responsive sans framework UI
+- ESLint
+
+## Lancer le projet
+
+\`\`\`bash
+npm install
+npm run dev
+\`\`\`
+
+## Build
+
+\`\`\`bash
+npm run build
+\`\`\`
+
+## Contact
+
+- LinkedIn : https://www.linkedin.com/in/jean-manyama-kapinga-96275495/
+- GitHub : https://github.com/JeanManyama
