@@ -388,7 +388,7 @@ export default function App() {
 
           <div className="timeline">
             {t.experiences.map((item, index) => (
-              <article className="timeline-item" key={\`\${item.company}-\${item.period}\`}>
+              <article className="timeline-item" key={item.company + '-' + item.period}>
                 <div className="timeline-index">{String(index + 1).padStart(2, '0')}</div>
                 <div className="timeline-period">{item.period}</div>
                 <div className="timeline-main">
