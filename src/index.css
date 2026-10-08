@@ -149,6 +149,72 @@ a {
   background: white;
 }
 
+.mobile-menu-button,
+.mobile-nav {
+  display: none;
+}
+
+.mobile-menu-button {
+  border: 1px solid var(--line);
+  background: white;
+  color: var(--ink);
+  min-height: 40px;
+  padding: 0 11px;
+  border-radius: 11px;
+  align-items: center;
+  gap: 8px;
+  font: inherit;
+  font-size: 0.8rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.menu-icon {
+  font-size: 1.05rem;
+  line-height: 1;
+}
+
+.mobile-nav {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.98);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  box-shadow: 0 18px 48px rgba(15, 28, 29, 0.12);
+  backdrop-filter: blur(18px);
+}
+
+.mobile-nav.open {
+  display: grid;
+}
+
+.mobile-nav a {
+  text-decoration: none;
+  padding: 13px 14px;
+  border-radius: 11px;
+  font-weight: 750;
+  font-size: 0.92rem;
+}
+
+.mobile-nav a:hover {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.mobile-cv-link {
+  margin-top: 4px;
+  background: var(--dark);
+  color: white !important;
+}
+
+.mobile-cv-link:hover {
+  background: var(--dark-soft) !important;
+  color: white !important;
+}
+
 main {
   width: min(calc(100% - 40px), var(--max));
   margin: 0 auto;
@@ -665,8 +731,8 @@ main {
     display: none;
   }
 
-  .brand-name {
-    display: none;
+  .mobile-menu-button {
+    display: inline-flex;
   }
 
   .section-grid,
@@ -718,6 +784,23 @@ main {
 
   .cv-link {
     display: none;
+  }
+
+  .brand-name {
+    display: none;
+  }
+
+  .top-actions {
+    gap: 7px;
+  }
+
+  .language-switch {
+    font-size: 0.76rem;
+  }
+
+  .mobile-menu-button {
+    min-height: 38px;
+    padding-inline: 10px;
   }
 
   .hero {
