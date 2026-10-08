@@ -9,6 +9,8 @@ const copy = {
       about: 'À propos',
       contact: 'Contact',
       cv: 'Télécharger le CV',
+      menu: 'Menu',
+      close: 'Fermer',
     },
     status: 'Ouvert aux opportunités Full Stack',
     heroEyebrow: 'DÉVELOPPEUR FULL STACK JAVASCRIPT',
@@ -103,6 +105,8 @@ const copy = {
       about: 'About',
       contact: 'Contact',
       cv: 'Download CV',
+      menu: 'Menu',
+      close: 'Close',
     },
     status: 'Open to Full Stack opportunities',
     heroEyebrow: 'FULL STACK JAVASCRIPT DEVELOPER',
@@ -223,6 +227,7 @@ function SectionHeader({ kicker, title, intro }) {
 
 export default function App() {
   const [lang, setLang] = useState('fr')
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const t = useMemo(() => copy[lang], [lang])
   const cvHref = lang === 'fr' ? links.cvFr : links.cvEn
 
@@ -243,10 +248,22 @@ export default function App() {
         </nav>
 
         <div className="top-actions">
+          <button
+            className="mobile-menu-button"
+            type="button"
+            aria-expanded={mobileMenuOpen}
+            aria-controls="mobile-navigation"
+            onClick={() => setMobileMenuOpen((open) => !open)}
+          >
+            <span>{mobileMenuOpen ? t.nav.close : t.nav.menu}</span>
+            <span className="menu-icon" aria-hidden="true">
+              {mobileMenuOpen ? '×' : '≡'}
+            </span>
+          </button>
           <div className="language-switch" aria-label="Choix de langue">
             <button
               className={lang === 'fr' ? 'active' : ''}
-              onClick={() => setLang('fr')}
+              onClick={() => { setLang('fr'); setMobileMenuOpen(false) }}
               type="button"
             >
               FR
@@ -254,7 +271,7 @@ export default function App() {
             <span>/</span>
             <button
               className={lang === 'en' ? 'active' : ''}
-              onClick={() => setLang('en')}
+              onClick={() => { setLang('en'); setMobileMenuOpen(false) }}
               type="button"
             >
               EN
@@ -264,6 +281,21 @@ export default function App() {
             {t.nav.cv}
           </a>
         </div>
+
+        <nav
+          id="mobile-navigation"
+          className={mobileMenuOpen ? 'mobile-nav open' : 'mobile-nav'}
+          aria-label="Navigation mobile"
+        >
+          <a href="#work" onClick={() => setMobileMenuOpen(false)}>{t.nav.work}</a>
+          <a href="#experience" onClick={() => setMobileMenuOpen(false)}>{t.nav.experience}</a>
+          <a href="#engineering" onClick={() => setMobileMenuOpen(false)}>{t.nav.engineering}</a>
+          <a href="#about" onClick={() => setMobileMenuOpen(false)}>{t.nav.about}</a>
+          <a href="#contact" onClick={() => setMobileMenuOpen(false)}>{t.nav.contact}</a>
+          <a className="mobile-cv-link" href={cvHref} download onClick={() => setMobileMenuOpen(false)}>
+            {t.nav.cv}
+          </a>
+        </nav>
       </header>
 
       <main id="top">
